@@ -100,23 +100,21 @@ Technologies
 
 **AWS 
 
-1. AWS - In AWS i worked for EC2, S3, VPC, Route 53, ELB, Classic Load Balancer, ECR (Elastic Container Registry), ECS (Elastic Container Service), 
-AMI(Amazon Machine Images), cloud watch, cloud trail, configuring the Lamdba functions to make them event driven or schedule driven. 
-2. In AWS, We Do Solutions Architect Role. i.e we support teams who request a cloud infrstructure in our company standard. 
-   our COmpany standard include hosting services only in specific regions, Having a Jump Server to Access any Private instances etc. 
-3. we Support Monitoring AWS using the Cloud watch,Cloud trail, VPC Flowlogs and identifying the Misconfigurations on Environments using a tool called Prisma Cloud. 
+1. AWS - In AWS i worked for EC2, S3, VPC, Route 53, RDS, Load Balancers like ELB, ALB, Container services like - ECR (Elastic Container Registry), ECS (Elastic Container Service), from Machine images standpoint i worked on AMI(Amazon Machine Images), and from Monitoring standpoint i worked on cloud watch, cloud trail, from Serverless point of view , i have configured the Lamdba functions & step functions to make them event driven or schedule driven. 
+2. In addition to that i manage the cloud support teams & Operations and work on control tower implementation, landing zone setup and cloud migrations. 
+3. I Support Monitoring AWS using the Cloud watch,Cloud trail, VPC Flowlogs and identifying the Misconfigurations on Environments using a tool called Prisma Cloud. 
 4. I also do the Infrastrucutre as a Code using the Cloud Formation as well as Terraform. Mostly Terraform is what i work and have expertise on. 
 5. In Addition to this, we support some services like API Gateway, AWS Lamdba, AWS QuickSight, Sage Maker etc. 
 6. I have involved in Complete Implimentation of AWS EKS/ECR etc to Manage our Kubernetes Environments. 
 
-------------------------------------------------------------------------- 
+**AWS 
 
-**Azure 
-
-1. In Azure i am lucky enough to be there from the beginning of the Azure implimentation to the Production ready state. 
-2. In Azure i understand i worked on Azure AD, Subscriptions, Resource Groups, App Services, VNets, Tunnels, Site Recovery, Vnet Peering, Blob , VM and VM Scalesets, Log Analytics & Secuirity Center etc. I worked on all these. 
-3. I also have knowledge on Azure Automation and Creating the ARM Templates. 
-4. We Support Azure Devops Actively. 
+1. AWS - In AWS i worked for EC2, S3, VPC, Route 53, RDS, Load Balancers like ELB, ALB, Container services like - ECR (Elastic Container Registry), ECS (Elastic Container Service), from Machine images standpoint i worked on AMI(Amazon Machine Images), and from Monitoring standpoint i worked on cloud watch, cloud trail, from Serverless point of view , i have configured the Lamdba functions & step functions to make them event driven or schedule driven. 
+2. In addition to that i manage the cloud support teams & Operations and work on control tower implementation, landing zone setup and cloud migrations. 
+3. I Support Monitoring AWS using the Cloud watch,Cloud trail, VPC Flowlogs and identifying the Misconfigurations on Environments using a tool called Prisma Cloud. 
+4. I also do the Infrastrucutre as a Code using the Cloud Formation as well as Terraform. Mostly Terraform is what i work and have expertise on. 
+5. In Addition to this, we support some services like API Gateway, AWS Lamdba, AWS QuickSight, Sage Maker etc. 
+6. I have involved in Complete Implimentation of AWS EKS/ECR etc to Manage our Kubernetes Environments. 
 
 
 ------------------------------------------------------------------------- 
@@ -125,7 +123,7 @@ AMI(Amazon Machine Images), cloud watch, cloud trail, configuring the Lamdba fun
 1. I help teams in different forms of the CI/CD , One of my key responsibilites is to mature the process using Automation. 
 2. I help the teams in Creating Automated Parameterized Pipleines Continous Integration(CI) / Continous Delivery (CD) / Unit testing using Sonar and Selinum / Security testing using Fortify etc. 
 Deployments using Ansible on Linux and Powershell remoting on windows. 
-3. i have experience working with Groovy , pipeline syntax and create scripted/Declarative Pipelines.  
+3. i have experience working with Groovy , pipeline syntax , Yaml templates and create scripted/Declarative Pipelines.  
 4. I have experience making the CI/CD as automated by creating the webhooks for seemless integration on version control and CI/CD.
 5. I have strong experience in Jenkins in configuring several jobs , free style projects, conditional pipelines, building with multiple branches and so on. 
 6. I have strong experience also in Azure devops usuing Azure Repos(Git)/ Azure Build and Release pipelines / Azure Test Plans for automated testing/ Azure Artifacts. 
@@ -142,17 +140,24 @@ Deployments using Ansible on Linux and Powershell remoting on windows.
 Example of a CI Pipeline 
  My CI Pipeline looks like , its a 5 staged pipeline. 
          Stage 1 --> Code Checkout. 
-                       - Here we do the Code checkout from the version control
-         Stage 2 --> Code Build / Artifact creation. 
+                       - Here we do the Code checkout from the version control, here we can take branch name as input
+         Stage 2 --> SCA (Software composition Analysis) & SAST (Static Application Security test). 
+                       - In SCA we check for any vulnerable opensources.
+                       - In SAST we do check if the code is having any vulnerable methods or classes. 
+                       - Once this check passes and atleast 95% compliant, we move to the next step fo creating the artifact 
+         Stage 3 --> Code Build / Artifact creation. 
                        - This is the Place we do the Artifact creation i.e war/jar/ear/zip/bin etc. 
-         Stage 3 --> Upload Artifact 
+                       - In Code packaging, we use maven for Java, MS Build for .net , npm for angular projects. 
+         Stage 4 --> Publish Artifact 
                        - Here is the Point where we upload the artifact to artifactor like Jfrog artifactory/ Nesus Repository. 
                        - Here we use curl command in a combinatio nwith Authentication token. 
-         Stage 4 --> Docker image creation. 
-                       - Here we checkout the Dockerfile code from the Devops git and from the artifact that is created in previous step. 
+         Stage 5 --> Docker image creation. 
+                       - Here we checkout the Docker file code from the Devops git and from the artifact that is created in previous step. 
                          we create a docker image from the dockerfile by copying the artifact to the image. 
-         Stage 5 --> upload image to the Docker Registry 
+         Stage 6 --> upload image to the Docker Registry 
                        - Once the image is created , you can upload it to the ECR(AWS-Elastic Container Registry)/ACR(Azure Container Registry) 
+
+                       This step completes the build pipeline
 
 ------------------------------------------------------------------------- 
 
