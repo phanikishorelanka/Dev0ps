@@ -1,27 +1,43 @@
-About me 
-  1. Hi I am currently working as a Senior Devops Engineer  
-  2. I am Devops Consultant, Cloud Architect & Automation ENgineer, I help teams in desiging Solutions on Cloud. 
-  I work on both AWS & Azure, I am from Digital Transformation team, I help teams to implement new Applications on cloud and work on migrations, Planning and execution. 
-  I have hands on infrastructure as a code using terraform , cft & Azure ARM templates. 
-  3. I work on Automation Projects , CI/CD Projects , Build and Release Automation, Unit testing, Security testing, Deployments and i use tools like Jenkins/Azure Devops/Gitlabs/Code Pipeline etc.
-  4. One of my key role is to understand the Applications very well and help teams to Convert Monolithic Applications to Microservices using Docker and help archestrate these using Kubernetes. 
-  I have experience working with AKS & ACR in Azure, EKS & ECR in AWS, Little bit of GKE as well. 
-  5. I work very closely with Development teams and involve and help in all phases of SDLC Process , Starting from Design Phase to the Post Implementation, Automation & Support Phases. 
-  6. I have hands on Ansible and chef 
-  7. I help teams in Implementing Containerization using Docker archestrating using Kubernetes.  
-  7. Coming to my scripting, i worked on Shell Scripting/Powershell/Python Data Structures & Python Flask.
-  8. COming to Monitoring i have expereince working with Nagios, Splunk, ELK (Elastic Search/Logstash/Kibana), Prometheus , Grafana , New Relic. 
+About me - General Devops Engineer 
 
-Overall this is my experience working at a high level. I work with enterprise application group and actively support the Corporate Devops. 
-I can go more detail for anything. 
+    I am currently working as a Devops , Cloud & Automation Engineer 
+    I am responsible for onboarding applications in cloud and doing the CI/CD. 
+    I am from Cloud Engineering & Automation team. I am responsible for complete end to end automation and migration of the applications. 
+    We have our Cloud subscriptions across AWS & Azure. I am responsible for
+            a. For writing Complete Infrastructure as a code using Terraform
+            b. Configuring Cloud Networks and connecting with On-Prem. 
+            c. Responsible for Complete CI/CD , Creating Pipeline as a Code and integrating tools like  Maven for Java , MS Build for .net and npm for Angular projects. 
+           d.  Also Responsible for Testing Code Quality using Sonar Qube and checkmarx.  
+           f. Responsible for Writing Ansible Playbooks and Ansible roles for doing configuration Management. 
+           h. Responsible for working with Application teams and writing Docker files starting from scratch for the Application which needs migration to Kubernetes.  
+    At this Point in our Organization, we are doing a Huge Migration of our Datacenters to Cloud. In this Process we are doing Lift & Shift Migrations and some of the things we are refactoring and redesigining some of the Applications in Cloud using the Cloud Native and latest features. I am Responsible for Creating Several Automations and support in Migration of Various Applications on the AWS & Azure. 
 
-** Read Only for Managers/Lead Positions 
-  8. I am responsible for Managing my team. I do create Project Plan and coordinate with Partners, Customers, Internal Stakeholders to take various approvals and 
-  build relationships with various team in order to acheive my day to day Goal. 
-  9. I actively work as a Program Manager Supporting various DOmains in Cloud Defining Solutions , Defining Security Standards, Creating Baseline Documentation,
-  Managing Sprints and Operting in the Agile Fashion following ScrumBan, Kanban Dashboards, I also do a Role of Scrum Master, Do Sprint Planning as well. 
+    I have hands on writing Docker files starting from scratch and archestrate Docker files on kubernetes Platforms like AKS, EKS. 
+    
+    I work very closely with Development teams and involve and help in all phases of SDLC Process, I involve from Design Phase to the Post Implementation, Automation & Support Phases as well. 
+    
+    In Scripting, I have hands on Shell Scripting/Powershell, Python Data Structures. 
+    
+    On the Monitoring side, i have experience working with Nagios, Splunk, ELK, Prometheus , Grafana, New Relic. 
+    Overall this is about me at a High level, I will be open for any questions. 
+
+
+**Intro - Prod or cloud support 
+--------------------------------- 
+
+I am currently working as a Devops & Production Support . I help teams in supporting cloud environments and also automate various processes.
+
+i have hands on AWS & Azure Cloud Platforms and have exp supporting Migration Projects. In my current Project i am helping teams writing automation for creating infrastructure on AWS & Azure using terraform and Cloud formation templates.
+
+I have hands on CI/CD tools like jenkins, Azure Devops and code pipeline , i do build automation , release automation and create pipelines in declarative and scripted format. w.r.t to scripting, i am good with shell scripting, powershell and python.
+on the otherside, i have experience writing Anisble Playbooks as well for doing automation. i also have exp in monitoring tools like New relic, cloud watch log groups etc.
+
+Overall i am completly a hands on person and passioante about devops and automation. 
+
 
 Day to day 
+----------- 
+
 What are your day to day operations?
   - I am Developper Administrator , 50% of doing Developments using Devops Technologies & 50% doing the Production Support. 
   - IN Devops Work, I get Several tickets on New AUtomations, CHanges to Pipelines, Executing & MOnitoring MOnthly/Weekly/Daily Builds. 
@@ -30,6 +46,56 @@ What are your day to day operations?
   - 25% of my work is on exploring new Technologies and doing POC on new tickets and Provide the Feedback and Make Production Ready APplications. 
   - Day starts with Checking the tickets, Responding to them and Gatekeeping Production Environment. 
  
+Short-intro 
+------------
+
+I am currently working as a  Devops & cloud Automation specialist. I help teams in supporting cloud environments and also responsible for automating processes.
+
+i have hands on experience on AWS & Azure.  I have experience supporting Migration Projects as well and onboarding applications to cloud. In my current Project i am helping teams writing automation for creating infrastructure on AWS & Azure, using terraform. 
+
+I have hands on experience in CI/CD tools like jenkins, Azure Devops and code pipeline , i do build automation , release automation and create pipelines in declarative and scripted format. w.r.t to scripting, i am good with shell scripting, powershell and briefly in python.
+
+on the otherside, i have experience writing Anisble Playbooks and also  have experience in monitoring tools like New relic, cloud watch log groups , Azure Log analytics etc.
+
+Overall this is about me at a high level and i will be open for any questions.  
+
+Intro-Azure
+-------------
+
+I am currently working as a  Cloud Administrator. I am currently helping teams doing Cloud implementations, cloud migrations , Cloud Support and Cloud Security. 
+
+i have hands on experience on Microsoft stack including Azure & Office 365.  I have hands on experience on Configuring Azure Active Directory and creating subscriptions , crating management groups and also creating policies to have complete Governance on cloud. 
+
+I have hands on experience on Infrastructure side, creating and managing infrastructure and configure complete enterprise wise networking using virtual networks, subnets, network security groups, site to site vpn, point to site vpn etc.  In addition to that i have hands on experience on Azure Webapps, logic apps, api apps, function apps and Data factory and data bricks. 
+
+I work very closely with development, qa, dba teams to onboard various applications to the Azure cloud. In our organization, largely we are using analytics and we are building Data lake in Azure using Webapps, SQL Synapse, Data factory, Datalake, Power BI, Azure API Management and Analysis services. 
+
+I am helping teams doing automation on creating infrastructure using terraform and Azure ARM Templates. Beyond that i also have experience writing powershell as well. 
+
+In my current role, we are doing migration of couple of data centers to the Azure Cloud, in this process, i am helping teams doing lift and shift migrations and also helping teams to migrate with cutting edge technology of Azure using Data factory and Azure Image builder etc. 
+
+In Addition to that i have experience on Azure monitor, Azure Defender for cloud which was formerly called Security center and also Microsoft Sentinel as well. 
+
+Overall i am completly a hands on guy and passioante about Cloud Platform and its underlying technology and automation. 
+
+
+Short-intro-Mware
+-----------------
+
+I am currently working as a devops engineer and automation specialist. 
+I help teams Doing Production Support ,  CI/CD Automation & Incident management  and support working for 24/7 Model. 
+I have hands on Experience working on Core Middleware Components like Oracle Weblogic , Fusion Middleware, Tomcat , Jboss Servers,  Apache HTTP , NGinx and etc.
+ I have hands experience on supporting cloud environments like AWS & Azure and also automate various processes.
+I have experience on supporting Migration Projects. In my current Project i am helping teams writing automation for creating infrastructure on AWS & Azure using terraform and Cloud formation templates.
+I have hands on CI/CD tools like jenkins, Azure Devops and code pipeline , i do build automation , release automation and create pipelines in declarative and scripted format. w.r.t to scripting, i am good with shell scripting, powershell and python.
+On the otherside, i have experience writing Ansible Playbooks as well for doing automation. i also have exp in monitoring tools like New relic, cloud watch log groups etc.
+Overall i am completly a hands on person and passioante about devops and automation. 
+
+------------
+
+
+
+
 Technologies 
 
 **AWS 
@@ -179,4 +245,3 @@ Operations & Troubleshooting
 10. I have very good knowldge on ITIL (CHange Management, Problem Management , Incident Mangement etc)
 
                         
-    
