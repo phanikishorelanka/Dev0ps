@@ -73,77 +73,101 @@ function Deploy-Individually {
     $exitSubMenu = $false
     while (-not $exitSubMenu) {
         Clear-Host
-        Write-Host "User Operations Menu"
-        Write-Host "PowerShell-Packages"
-        Write-Host "PowerShell-SSH"
-        Write-Host "PowerShell-NXFILELINEL1L2"
-        Write-Host "PowerShell-NXFILELINEL3L4"
-        Write-Host "c: Return to Main Menu"
+        Write-Host "***Individual Menu - RHEL8-Baseline-Controls****"
+        Write-Host "1:  NxAccounts"
+        Write-Host "2:  SSH"
+        Write-Host "3:  NxFileline-L1L2"
+        Write-Host "4:  NxFileline-L3L4"
+        Write-Host "5:  NXServices-L1L2"
+        Write-Host "6:  NXServices-L3L4"
+        Write-Host "7:  NXPackages-L1L2"
+        Write-Host "8:  NXPackages-L3L4"
+        Write-Host "9:  L1-Controls"
+        Write-Host "10: L2-Controls"
+        Write-Host "11: L3-Controls"
+        Write-Host "12: L4-Controls"
+        Write-Host "13: Return to Main Menu"
         $choice = Read-Host "Select an option (a-c)"
         switch ($choice) {
-            'a' { Add-User }
-            'b' { Remove-User }
-            'c' { $exitSubMenu = $true }
+            '1' { NxAccounts }
+            '2' { SSH }
+            '3' { NxFileLine-L1L2 }
+            '4' { NxFileLine-L3L4 }
+            '5' { NxServices-L1L2 }
+            '6' { NxServices-L3L4 }
+            '7' { NxPackages-L1L2 }
+            '8' { NxPackages-L3L4 }
+            '9' { L1-Controls }
+            '10' { L2-Controls }
+            '11' { L3-Controls }
+            '12' { L4-Controls }
+            '13' { $exitSubMenu = $true }
             default { Write-Host "Invalid option, please try again." -ForegroundColor Red }
         }
     }
 }
 
 # Add a new user
-function Add-User {
-    $userName = Read-Host "Enter the username to add"
-    New-LocalUser -Name $userName -Description "Added via PowerShell Menu"
-    Write-Host "User added successfully." -ForegroundColor Green
+function NxAccounts {
+    Write-Host "In NxAccounts" -ForegroundColor Green
     Pause-And-Clear
 }
 
-# Remove an existing user
-function Remove-User {
-    $userName = Read-Host "Enter the username to remove"
-    Remove-LocalUser -Name $userName
-    Write-Host "User removed successfully." -ForegroundColor Green
+function SSH {
+    Write-Host "In SSH" -ForegroundColor Green
     Pause-And-Clear
 }
 
-# Display network settings
-function Show-NetworkSettings {
-    Clear-Host
-    Write-Host "Network Settings:"
-    Get-NetIPAddress
+function NxFileLine-L1L2 {
+    Write-Host "In NxFileLine-L1L2" -ForegroundColor Green
     Pause-And-Clear
 }
 
-# Manage files
-function Show-FileManagement {
-    Clear-Host
-    Write-Host "File Management:"
-    Get-ChildItem
+function NxFileLine-L3L4 {
+    Write-Host "In NxFileLine-L3L4" -ForegroundColor Green
     Pause-And-Clear
 }
 
-# Display services
-function Show-Services {
-    Clear-Host
-    Write-Host "Services:"
-    Get-Service
+function NxServices-L1L2 {
+    Write-Host "In NxServices-L1L2" -ForegroundColor Green
     Pause-And-Clear
 }
 
-# Manage processes
-function Show-ProcessManagement {
-    Clear-Host
-    Write-Host "Process Management:"
-    Get-Process
+function NxServices-L3L4 {
+    Write-Host "In NxServices-L3L4" -ForegroundColor Green
     Pause-And-Clear
 }
 
-# Disk operations
-function Show-DiskOperations {
-    Clear-Host
-    Write-Host "Disk Operations:"
-    Get-Disk
+function NxPackages-L1L2 {
+    Write-Host "In NxPackages-L1L2" -ForegroundColor Green
     Pause-And-Clear
 }
+
+function NxPackages-L3L4 {
+    Write-Host "In NxPackages-L3L4" -ForegroundColor Green
+    Pause-And-Clear
+}
+
+function L1-Controls {
+    Write-Host "In L1-Controls" -ForegroundColor Green
+    Pause-And-Clear
+}
+
+function L2-Controls {
+    Write-Host "In L2-Controls" -ForegroundColor Green
+    Pause-And-Clear
+}
+
+function L3-Controls {
+    Write-Host "In L3-Controls" -ForegroundColor Green
+    Pause-And-Clear
+}
+
+function L4-Controls {
+    Write-Host "In L4-Controls" -ForegroundColor Green
+    Pause-And-Clear
+}
+
 
 # Utility function to pause and clear the screen
 function Pause-And-Clear {
