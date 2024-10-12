@@ -1,0 +1,6 @@
+PS C:\Users\devop> $propertyName = Read-Host "Enter the property name"
+Enter the property name: PS C:\Users\devop> $PlaypenId = Read-Host "Enter the PlaypenID"       
+Enter the PlaypenID: xyz
+PS C:\Users\devop> Add-Content -Path .\propertyfile -Value $PlaypenId      
+PS C:\Users\devop> notepad .\propertyfile
+PS C:\Users\devop> 
