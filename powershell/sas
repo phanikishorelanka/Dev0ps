@@ -1,0 +1,1 @@
+$sasToken = New-AzStorageContainerSASToken -Name $containerName -Context $storageAccount.Context -Permission "racwdl" -ExpiryTime (Get-Date).AddHours($expiryTimeInHours) -FullUri
